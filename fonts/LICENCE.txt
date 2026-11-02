@@ -1,0 +1,2 @@
+﻿Geist (Vercel) — police sous licence SIL Open Font License 1.1 : https://github.com/vercel/geist-font/blob/main/LICENSE.TXT
+Fichiers repris de l'application Fisherman Spin (sous-ensembles latin et latin étendu), hébergés ici pour ne rien charger depuis un autre serveur.
