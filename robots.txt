@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /paiement.html
+Sitemap: https://fishermanspin.fr/sitemap.xml

@@ -1,0 +1,65 @@
+/* Présentation des fonctions 0.2.17. Les couleurs et la typographie du site sont conservées. */
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.marque { flex-shrink: 0; white-space: nowrap; }
+@media (max-width: 780px) { .menu .secondaire { display: none; } }
+section[id] { scroll-margin-top: 85px; }
+.heros-lancement { padding: 64px 0 60px; }
+.heros-grille { display: grid; grid-template-columns: 1fr 1fr; gap: 38px; align-items: center; }
+.heros-lancement h1 { font-size: clamp(38px, 4.1vw, 57px); max-width: 15ch; line-height: 1.06; }
+.heros-lancement .chapeau { font-size: 17px; }
+.heros-lancement .petit { margin-top: 12px; margin-bottom: 0; }
+.apercu-heros { min-width: 0; margin: 0; border-radius: 16px; border: 1px solid var(--bord); overflow: hidden; box-shadow: var(--ombre); background: #0b1010; color: #d7e3e1; transform: rotate(1deg); }
+.fenetre-titre { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 12px 14px; font-size: 12px; border-bottom: 1px solid #263432; }
+.point-interface { width: 7px; height: 7px; border-radius: 50%; background: #2dd4bf; }
+.version { margin-left: auto; color: #90a7a3; font-size: 11px; }
+.apercu-heros img { width: 100%; height: auto; aspect-ratio: 1.24; object-fit: cover; object-position: top; }
+.apercu-heros figcaption { font-size: 11px; padding: 9px 14px; color: #abbdb9; }
+.surtitre { display: block; margin-bottom: 12px; color: var(--accent); font-size: 12px; text-transform: uppercase; letter-spacing: .11em; font-weight: 650; }
+.titre-ligne { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap; }
+.titre-ligne a { font-size: 14px; }
+.section-demo { padding-top: 44px; background: var(--fond-doux); }
+.video-demo { width: 100%; height: auto; aspect-ratio: 16/9; display: block; background: #0b1010; border-radius: 16px; border: 1px solid var(--bord); }
+.transcription { font-size: 14px; padding: 12px 0; margin-bottom: 36px; }
+.transcription summary { font-size: 14px; }
+.parcours-visuel { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.parcours-visuel article { min-width: 0; }
+.parcours-visuel h3 { font-size: 21px; margin: 8px 0; letter-spacing: -.025em; }
+.parcours-visuel p { color: var(--texte-doux); font-size: 14px; min-height: 68px; margin: 0 0 18px; }
+.numero { color: var(--accent); font-size: 13px; letter-spacing: .04em; font-weight: 650; }
+.parcours-visuel img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; object-position: top; border-radius: 10px; border: 1px solid var(--bord); background: #0b1010; }
+.parcours-visuel a { display: block; }
+.bandeau-essai { display: grid; grid-template-columns: 1fr auto; gap: 38px; align-items: center; }
+.bandeau-essai p { color: var(--texte-doux); max-width: 65ch; margin-bottom: 0; }
+.bandeau-essai .actions { flex-direction: column; align-items: stretch; }
+.bandeau-essai h2 { max-width: 23ch; }
+.premier-pas { border-top: 1px solid var(--bord); border-bottom: 1px solid var(--bord); background: var(--fond-doux); }
+.retours { border-top: 1px solid var(--bord); }
+.guide > .badge { display: table; margin-top: 30px; }
+.guide-etapes { list-style: none; padding: 0; counter-reset: guide; }
+.guide-etapes > li { position: relative; padding: 14px 0 24px 54px; border-bottom: 1px solid var(--bord); counter-increment: guide; }
+.guide-etapes > li::before { content: counter(guide, decimal-leading-zero); position: absolute; top: 50px; left: 0; color: var(--accent); font-size: 19px; font-weight: 650; }
+.guide-etapes > li h2 { margin-top: 30px; }
+.capture-guide { width: 100%; height: auto; border: 1px solid var(--bord); border-radius: 12px; margin: 20px 0; }
+.guide .encart h2 { margin-top: 0; }
+@media (max-width: 950px) {
+  .heros-grille { gap: 28px; }
+  .heros-lancement h1 { font-size: 44px; }
+  .heros-lancement .bouton { width: 100%; }
+  .bandeau-essai { grid-template-columns: 1fr; gap: 24px; }
+  .bandeau-essai .actions { flex-direction: row; flex-wrap: wrap; }
+}
+@media (max-width: 720px) {
+  .heros-lancement { padding: 40px 0; }
+  .heros-grille { grid-template-columns: 1fr; }
+  .heros-lancement h1 { font-size: clamp(35px, 9vw, 50px); max-width: 20ch; }
+  .heros-lancement .actions { align-items: stretch; }
+  .heros-lancement .bouton { width: auto; }
+  .apercu-heros { transform: none; }
+  .apercu-heros img { aspect-ratio: 1.35; }
+  .parcours-visuel { grid-template-columns: 1fr; gap: 32px; }
+  .parcours-visuel p { min-height: 0; }
+  .parcours-visuel img { aspect-ratio: 5/4; }
+  .guide-etapes > li { padding-left: 38px; }
+  .guide-etapes > li::before { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
