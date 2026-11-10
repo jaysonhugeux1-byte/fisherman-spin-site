@@ -63,3 +63,7 @@ section[id] { scroll-margin-top: 85px; }
   .guide-etapes > li::before { font-size: 16px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Sélecteur FR/EN visible aussi sur mobile. */
+.menu .langue{border:1px solid var(--bord);font-size:12px;flex-shrink:0;padding:6px 8px}
+@media(max-width:440px){.entete .conteneur{gap:7px}.marque{font-size:16px;gap:6px}.marque .pastille{width:27px;height:27px}.menu{gap:2px}.menu .bouton{font-size:12px;padding:8px 9px}}
